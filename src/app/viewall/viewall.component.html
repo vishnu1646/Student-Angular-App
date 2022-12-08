@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row ">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+        <table class="table table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Admission Number</th>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">College</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of data">
+                    <td>{{i.name}}</td>
+                    <td>{{i.admno}}</td>
+                    <td>{{i.rollno}}</td>
+                    <td>{{i.college}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+    </div>
+</div>

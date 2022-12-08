@@ -22,7 +22,16 @@ readValues=()=>
     (response:any)=>
     {
       console.log(response)
-      
+      if (response.staus="success") {
+        alert("Student added Successfully")
+        this.name=""
+        this.rollno=""
+        this.admno=""
+        this.college=""
+        
+      } else {
+        alert("Something went wrong")
+      }
     }
   )
   
